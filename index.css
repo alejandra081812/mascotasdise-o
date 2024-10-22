@@ -1,0 +1,111 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#f5cffa;
+    padding: 40px;
+}
+
+.logo_veterinaria{
+    display: flex;
+    width: 0vw;
+}
+#texto{
+    margin-left: 20px;
+    font-family: "Qwitcher Grypen", cursive;
+}
+
+.logo_veterinaria img {
+    width: 15rem;
+    height: 6rem;
+    border-radius: 60%;
+}
+nav{
+    position:relative;
+    border: 3px solid  #000000;
+}
+nav ul {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    border: 3px solid  #000000;
+    right: 10vw;
+    top: -95%;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+.icon {
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 40;
+}
+nav ul li a {
+    color: #000000;
+    font-family:fantasy;
+    text-decoration:none;
+    padding: 1px 15px;
+    background-color: hsla(261, 83%, 65%, 0.5);
+}
+
+nav ul li a:hover {
+    background-color:#db81e7;
+}
+
+#bienvenida {
+    margin: 20px;
+    padding: 40px;
+    background-color:#f5cffa; 
+    text-align: center;
+    font-family: "Qwitcher Grypen", cursive;
+}
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images img {
+    width: 200px;
+    height: auto;
+}
+
+#elegir {
+    padding: 40px;
+    text-align: center;
+    background-color:#f5cffa; 
+    margin-top: 20px;
+}
+#elegir2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+#contacto {
+    margin-top: 20px;
+    background-color:#f5cffa;
+    text-align: center;
+    padding: 30px;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#redes {
+    padding: 10px;
+    background-color:#ac84b1;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.inactivo{
+    display: none;
+}
+
+
+@media (400px < width){
+    form {
+        width: 80;
+    }
+}
