@@ -1,0 +1,33 @@
+.citas {
+    background-color:rgb(178, 41, 190);
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.citas form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 330px;
+    margin: 0 auto;
+    color: #4e9265;
+}
+
+.citas input, .citas button {
+    padding: 0.8em;
+    border: 3px solid #5c1758;
+    border-radius: 17px;
+    background-color: #d48bf1;
+    color: #1d1ac5;
+
+}
+
+.citas button {
+    background-color: #7d17a5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border: 3px solid #ccbccc;
+    border-radius: 18px;
+}
