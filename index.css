@@ -1,108 +1,247 @@
+body {
+    margin: 0;
+    background-color: #f1d6f5;
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color:#f5cffa;
-    padding: 40px;
+    background-color: #eebaf5;
+    padding: 10px 20px; 
+    position: sticky;
+    top: 0;
+    z-index: 3;
 }
 
-.logo_veterinaria{
+.logo_veterinaria {
     display: flex;
-    width: 0vw;
-}
-#texto{
-    margin-left: 20px;
-    font-family: "Qwitcher Grypen", cursive;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .logo_veterinaria img {
-    width: 15rem;
-    height: 6rem;
-    border-radius: 60%;
+    width: 80px;
+    height: 80px;
+    border-radius: 90%;
 }
-nav{
-    position:relative;
-    border: 3px solid  #000000;
+
+
+nav {
+    display: flex;
+    align-items: center;
 }
+
 nav ul {
     list-style: none;
-    position: absolute;
     display: flex;
-    border: 3px solid  #000000;
-    right: 10vw;
-    top: -95%;
-    flex-direction: column;
-    gap: 5px;
-    padding: 10px;
+    gap: 15px;
 }
-.icon {
-    font-size: 3rem;
-    cursor: pointer;
-    z-index: 40;
-}
+
 nav ul li a {
-    color: #000000;
-    font-family:fantasy;
-    text-decoration:none;
-    padding: 1px 15px;
-    background-color: hsla(261, 83%, 65%, 0.5);
+    color: #050505;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: hsla(260, 59%, 70%, 0.5);
+    border-radius: 18px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    box-sizing: border-box;
 }
 
 nav ul li a:hover {
-    background-color:#db81e7;
+    background-color: #9194c2;
+}
+
+.botones {
+    display: flex;
+    gap: 15px; 
+}
+
+.iniciar-sesion, .agenda-cita {
+    color: #110f0f;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #b86ab8;
+    border-radius: 18px;
+    font-size: 1rem;
+    background-color: #eebaf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; 
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.iniciar-sesion:hover {
+    background-color: hsla(260, 59%, 70%, 0.5);
+}
+
+.agenda-cita {
+    background-color: #eebaf5;
+}
+
+.agenda-cita:hover {
+    background-color: hsla(260, 59%, 70%, 0.5);
+    color: #050505;
 }
 
 #bienvenida {
-    margin: 20px;
-    padding: 40px;
-    background-color:#f5cffa; 
-    text-align: center;
-    font-family: "Qwitcher Grypen", cursive;
-}
-.images {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Arial", sans-serif;
 }
 
-.images img {
-    width: 200px;
+.texto-bienvenida {
+    max-width: 50%;
+    color: #3d005a;
+}
+
+.texto-bienvenida h2 {
+    font-size: 24px;
+    color: #3d005a;
+}
+
+.imagenes {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 30%;
+    margin-right: 20px; 
+}
+
+.imagenes img {
+    border-radius: 20px;
+    width: 90%; 
     height: auto;
+    max-height: 250px;
+    margin-left: 10px; 
+}
+
+.imagenes .flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    background-color: #aa71c5;
+    border:2px solid  #566fc4;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 90%;
+}
+
+.imagenes .izquierda {
+    left: -30px;
+}
+
+.imagenes .derecha {
+    right: -30px;
+}
+
+.imagenes .flecha:hover {
+    background-color: #dd65b5;
 }
 
 #elegir {
-    padding: 40px;
+    padding: 20px;
     text-align: center;
-    background-color:#f5cffa; 
-    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3d005a;
 }
-#elegir2{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+
+#elegir2 {
+    font-family:Arial, Helvetica, sans-serif;
     margin-top: 10px;
+    color: #3d005a;
 }
+
 
 #contacto {
-    margin-top: 20px;
-    background-color:#f5cffa;
-    text-align: center;
-    padding: 30px;
-   font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+    font-family: "Arial", sans-serif;
 }
 
+.texto-contacto {
+    max-width: 50%;
+    color: #3d005a;
+}
+
+.texto-contacto h2 {
+    font-size: 24px;
+    color: #3d005a;
+}
+
+.imagenescon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 30%;
+    margin-right: 20px; 
+}
+
+.imagenescon img {
+    border-radius: 20px;
+    width: 90%; 
+    height: auto;
+    max-height: 250px;
+    margin-left: 10px; 
+}
+
+.imagenescon .flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    background-color: #aa71c5;
+    border:2px solid  #566fc4;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 90%;
+}
+
+.imagenescon .izquierda {
+    left: -30px;
+}
+
+.imagenescon .derecha {
+    right: -30px;
+}
+
+.imagenescon .flecha:hover {
+    background-color: #dd65b5;
+}
 
 #redes {
     padding: 10px;
-    background-color:#ac84b1;
-    color: #ffffff;
+    background-color: #eebaf5;
+    color: #3d005a;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 40px;
+}
+#redes i {
+    font-size: 26px;
+    color: #020202; 
+    margin-right: 10px; 
 }
 
-.inactivo{
-    display: none;
+#redes a:hover i {
+    color: #1da1f2; 
 }
-
 
 @media (400px < width){
     form {
