@@ -236,11 +236,17 @@ nav ul li a:hover {
 #redes i {
     font-size: 26px;
     color: #020202; 
-    margin-right: 10px; 
+    margin-right: 10px;
+
+}
+
+#redes a{
+    text-decoration: none;
 }
 
 #redes a:hover i {
     color: #1da1f2; 
+
 }
 
 @media (400px < width){
